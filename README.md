@@ -25,9 +25,9 @@
 
 ##  APIs Elegidas
 
-### 1. API de Usuarios - JSONPlaceholder/MockAPI
+### 1. API de Usuarios - MockAPI
 ** Endpoint**:  
-`https://[TU_ID].mockapi.io/users`
+'https://68743fcedd06792b9c937143.mockapi.io/api/users'
 
 ** Justificación **:  
 -  **Simple implementación**: Ideal para prototipado rápido  
