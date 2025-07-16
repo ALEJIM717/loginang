@@ -23,22 +23,6 @@
 3. **Perfil**:
    - Muestra datos del usuario desde `auth.service`
 
-### Métodos clave
-```typescript
-// auth.service.ts
-login(credentials: {username: string, password: string}): Observable<User> {
-  return this.http.post<User>(API_AUTH_URL, credentials)
-    .pipe(tap(user => this.saveSession(user)));
-}
-
-// pokemon.service.ts
-fetchItems(page: number, search?: string): Observable<ApiResponse> {
-  const params = new HttpParams()
-    .set('page', page.toString())
-    .set('search', search || '');
-  return this.http.get<ApiResponse>(API_DATA_URL, { params });
-}
-
 ##  APIs Elegidas
 
 ### 1. API de Usuarios - JSONPlaceholder/MockAPI
@@ -75,4 +59,4 @@ Editar Pokemon
 
 Mas informacion
 ![Funcionamiento](funci5.png)
-<img src="funci1.png" width="975" alt="Funcionamiento - Iniciar sesión">
+
