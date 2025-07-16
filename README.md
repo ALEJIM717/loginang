@@ -62,12 +62,12 @@ No requiere registro ni API keys
 
 ### Imagenes del Funcionamiento
 Iniciar sesión
-![Funcionamiento](./funci1.png)
+![Funcionamiento](funci1.png)
 Tabla Pokemones
-![Funcionamiento](./funci2.png)
+![Funcionamiento](funci2.png)
 Agregar Pokemon
-![Funcionamiento](./funci3.png)
+![Funcionamiento](funci3.png)
 Editar Pokemon
-![Funcionamiento](./funci4.png)
+![Funcionamiento](funci4.png)
 Mas informacion
-![Funcionamiento](./funci5.png)
+![Funcionamiento](funci5.png)
