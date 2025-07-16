@@ -62,7 +62,7 @@ No requiere registro ni API keys
 
 ### Imagenes del Funcionamiento
 Iniciar sesión
-<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/2b912e7b-8bdf-48ae-b40a-37165b3b0261" />
+funci1.png
 
 Tabla Pokemones
 <img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/809c8ad0-09d5-43d4-8bc3-23d465f7de4c" />
