@@ -62,18 +62,16 @@ No requiere registro ni API keys
 
 ### Imagenes del Funcionamiento
 Iniciar sesión
-funci1.png
+![Funcionamiento](funci1.png)
 
 Tabla Pokemones
-<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/809c8ad0-09d5-43d4-8bc3-23d465f7de4c" />
+![Funcionamiento](funci2.png)
 
 Agregar Pokemon
-<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/e40ac561-ea4c-41de-be24-30643d44a8bf" />
+![Funcionamiento](funci3.png)
 
 Editar Pokemon
-<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/d069b0e1-21d2-48f6-b970-10d046311fd9" />
+![Funcionamiento](funci4.png)
 
-![Funcionamiento](origen/funci4.png)
 Mas informacion
-![Funcionamiento](origen/funci5.png)
-<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/57d781ae-b25b-4643-bc4b-8812fd52f7a6" />
+![Funcionamiento](funci5.png)
