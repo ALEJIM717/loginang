@@ -75,3 +75,4 @@ Editar Pokemon
 
 Mas informacion
 ![Funcionamiento](funci5.png)
+<img src="funci1.png" width="975" alt="Funcionamiento - Iniciar sesión">
