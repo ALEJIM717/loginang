@@ -1,59 +1,73 @@
-# Loginangular
+##  Integrantes del equipo
+- **RODRIGUEZ HERNANDEZ ALEXA ISABEL**
+- **JIMENEZ OSORIO CHRISTOPHER MARTIN**
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.6.
+## Tecnologías usadas
 
-## Development server
+ Angular Material
+ TypeScript 
+ HTML5
+ JSON 
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Flujo de la aplicación
+1. **Login**: 
+   - `auth.service.ts` valida credenciales contra API de usuario
+   - Redirige a `/home`
 
-## Code scaffolding
+2. **Página principal**:
+   - `data.service.ts` consume API externa (Pokémon/películas)
+   - `table.component.ts` muestra datos con paginación/filtros
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+3. **Perfil**:
+   - Muestra datos del usuario desde `auth.service`
 
-```bash
-ng generate component component-name
-```
+### Métodos clave
+```typescript
+// auth.service.ts
+login(credentials: {username: string, password: string}): Observable<User> {
+  return this.http.post<User>(API_AUTH_URL, credentials)
+    .pipe(tap(user => this.saveSession(user)));
+}
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+// pokemon.service.ts
+fetchItems(page: number, search?: string): Observable<ApiResponse> {
+  const params = new HttpParams()
+    .set('page', page.toString())
+    .set('search', search || '');
+  return this.http.get<ApiResponse>(API_DATA_URL, { params });
+}
 
-```bash
-ng generate --help
-```
+##  APIs Elegidas
 
-## Building
+### 1. API de Usuarios - JSONPlaceholder/MockAPI
+** Endpoint**:  
+`https://[TU_ID].mockapi.io/users`
 
-To build the project run:
+** Justificación **:  
+-  **Simple implementación**: Ideal para prototipado rápido  
+-  **Endpoint público**: No requiere autenticación compleja  
+## 2. API de Pokémon - PokeAPI
 
-```bash
-ng build
-```
+** Endpoint **:  
+`https://pokeapi.co/api/v2/pokemon`
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+**Justificación**:
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Incluye imágenes front/back en diferentes estilos 
+Contiene stats, habilidades, tipos, movimientos 
+No requiere registro ni API keys 
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Imagenes del Funcionamiento
+Iniciar sesión
+![Funcionamiento](./funci1.png)
+Tabla Pokemones
+![Funcionamiento](./funci2.png)
+Agregar Pokemon
+![Funcionamiento](./funci3.png)
+Editar Pokemon
+![Funcionamiento](./funci4.png)
+Mas informacion
+![Funcionamiento](./funci5.png)
